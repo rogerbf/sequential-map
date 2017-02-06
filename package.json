@@ -1,7 +1,7 @@
 {
   "name": "sequential-map",
   "version": "1.0.0",
-  "description": "sequential processing of data",
+  "description": "sequential processing of data through a promise yielding function",
   "main": "index.js",
   "scripts": {
     "test": "jest --config .jest",
