@@ -1,6 +1,6 @@
 # sequential-map
 
-Creates a new array with the results of calling a provided projection function on each element in a array.
+Creates a new array with the results of calling a provided promise yielding projection function on each element in a array.
 
 ## usage
 
