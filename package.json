@@ -1,6 +1,6 @@
 {
   "name": "sequential-map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "sequential processing of data through a promise yielding function",
   "main": "index.js",
   "scripts": {
