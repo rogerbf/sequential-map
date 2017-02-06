@@ -23,4 +23,4 @@ sequence(
 
 - `fn` projection function
 - `values` values to run through the projection function
-- `Promise` overide the global Promise object
+- `Promise` override the global Promise object
