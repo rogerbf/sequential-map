@@ -1,6 +1,6 @@
 {
   "name": "sequential-map",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "sequential processing of data through a promise yielding function",
   "main": "index.js",
   "scripts": {
@@ -31,5 +31,13 @@
     "eslint-plugin-standard": "^2.0.1",
     "jest-cli": "^18.1.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerbf/sequential-map.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rogerbf/sequential-map/issues"
+  },
+  "homepage": "https://github.com/rogerbf/sequential-map#readme"
 }
