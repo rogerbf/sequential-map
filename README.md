@@ -1,26 +1,31 @@
 # sequential-map
 
-Creates a new array with the results of calling a provided promise yielding projection function on each element in a array.
+Resolves to a new array with the result of calling a provided promise-returning function with every element in a provided array sequentially.
 
 ## usage
 
 ```javascript
-import sequence from 'sequential-map'
+const sequence = require(`sequential-map`)
 
-// The following will resolve after 4 seconds
+// Will resolve after ~4 seconds
 sequence(
-  m => new Promise(resolve => setTimeout(resolve.bind(null, m), 1000)),
+  message => new Promise(
+    resolve => setTimeout(
+      resolve.bind(null, message),
+      1000
+    )
+  ),
   [ `they`, `call`, `me`, `Hiphopopotamus` ]
 )
-.then(console.log.bind(null))
-.catch(console.log.bind(null, `there was an error`))
+.then(console.log)
+.catch(console.error)
 // [ `they`, `call`, `me`, `Hiphopopotamus` ]
 ```
 
 ## api
 
-### `sequence(fn, [values], [Promise])`
+### `sequence(fn[,values][,PromiseImplementation])`
 
-- `fn` projection function
-- `values` values to run through the projection function
-- `Promise` override the global Promise object
+- `fn` map function
+- `values` &lt;Array&gt; values to map over
+- `PromiseImplementation` override the global Promise object
